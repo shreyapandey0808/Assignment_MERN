@@ -9,10 +9,11 @@
     body { font-family: Arial, sans-serif; color: #12203a; font-size: 1rem; }
 
     /* ---------- MOBILE FIRST (default) ---------- */
-    /* Flexbox navbar */
+
+    /* Navbar: Flexbox, stacked on phone */
     nav {
       display: flex;
-      flex-direction: column; /* stacked on phone */
+      flex-direction: column;
       align-items: center;
       gap: 8px;
       padding: 14px;
@@ -22,14 +23,15 @@
     nav h2 { font-size: 1.4rem; }
     nav a { color: white; margin: 0 8px; text-decoration: none; font-size: 1rem; }
 
+    /* Hero section */
     .hero { padding: 40px 16px; text-align: center; background: #2f5bea; color: white; }
     .hero h1 { font-size: 1.6rem; }
     .hero img { max-width: 100%; height: auto; margin-top: 16px; border-radius: 12px; }
 
-    /* Grid for the feature boxes */
+    /* Features: Grid, 1 column on phone */
     .features {
       display: grid;
-      grid-template-columns: 1fr; /* 1 column on phone */
+      grid-template-columns: 1fr;
       gap: 16px;
       padding: 20px;
     }
@@ -53,6 +55,7 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <nav>
     <h2>TravelEase</h2>
     <div>
@@ -62,18 +65,21 @@
     </div>
   </nav>
 
+  <!-- Hero banner -->
   <section class="hero">
     <h1>Plan your next trip in minutes</h1>
     <p>Simple, cheap and fun travel plans.</p>
     <img src="img/hero.jpg" alt="Mountain trip banner" width="600">
   </section>
 
+  <!-- Feature boxes -->
   <section class="features">
     <div class="box"><h3>Easy Booking</h3><p>Book in 3 clicks.</p></div>
     <div class="box"><h3>Best Prices</h3><p>We compare for you.</p></div>
     <div class="box"><h3>24x7 Help</h3><p>We are always online.</p></div>
   </section>
 
+  <!-- Footer -->
   <footer>Made by a first year student</footer>
 </body>
 </html>
