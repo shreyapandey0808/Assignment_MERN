@@ -4,26 +4,48 @@
   <meta charset="UTF-8">
   <title>Profile Card</title>
   <style>
-    /* width will include padding and border (easier maths!) */
     * { box-sizing: border-box; }
 
     body { margin: 0; font-family: Arial, sans-serif; background: #eef2f8; }
 
-    /* Box model: content + padding + border + margin */
     .card {
       width: 280px;
       margin: 24px auto;
       background: white;
       border: 2px solid #2f5bea;
+      border-radius: 16px;
       padding: 20px;
       text-align: center;
     }
+
+    /* 50% radius = perfect circle */
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: #2f5bea;
+      color: white;
+      font-size: 36px;
+      line-height: 90px;
+      margin: 0 auto 10px;
+    }
+
+    /* Second colour version (green) */
+    .card-green { border-color: #2a9d5c; }
+    .card-green .avatar { background: #2a9d5c; }
   </style>
 </head>
 <body>
   <div class="card">
+    <div class="avatar">Y</div>
     <h2>Your Name</h2>
     <p>Web Developer in Making</p>
+  </div>
+
+  <div class="card card-green">
+    <div class="avatar">F</div>
+    <h2>Friend Name</h2>
+    <p>Designer in Making</p>
   </div>
 </body>
 </html>
