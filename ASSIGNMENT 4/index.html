@@ -6,6 +6,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /*
+      Why I chose these colours:
+      1. Blue (#2f5bea) looks modern and is easy to see on a white background.
+      2. Light blue-white (#eef2ff) is soft on the eyes for the page background.
+      3. Dark navy (#1b2440) gives strong contrast, so the text is easy to read.
+    */
+
     /* Variables: change a colour here and it changes everywhere */
     :root {
       --brand: #2f5bea;
@@ -14,6 +21,7 @@
       --gap: 16px;
     }
 
+    /* * = every element */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
@@ -25,8 +33,10 @@
       padding: var(--gap);
     }
 
+    /* h1 = element selector */
     h1 { font-size: 2.2rem; letter-spacing: 1px; }
 
+    /* #hero = id selector (only one on the page) */
     #hero {
       background: var(--brand);
       color: white;
@@ -35,6 +45,7 @@
       border-radius: 10px;
     }
 
+    /* .card = class selector (use many times) */
     .card {
       background: white;
       padding: var(--gap);
@@ -58,11 +69,13 @@
   </style>
 </head>
 <body>
+  <!-- Hero banner -->
   <div id="hero">
     <h1>Coding Club</h1>
     <p>Learn. Build. Share.</p>
   </div>
 
+  <!-- Events table -->
   <div class="card">
     <h2>Upcoming Events</h2>
     <table>
@@ -72,6 +85,7 @@
     </table>
   </div>
 
+  <!-- Registration box -->
   <div class="card">
     <h2>Register</h2>
     <p>Name: <input type="text" placeholder="Your name"></p>
