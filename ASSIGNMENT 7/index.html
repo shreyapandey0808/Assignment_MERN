@@ -8,6 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #eef2f8; }
 
+    /* The whole page layout, with named areas */
     .layout {
       display: grid;
       grid-template-columns: 170px 1fr;
@@ -20,19 +21,21 @@
       padding: 10px;
     }
 
+    /* Each part goes to its named area */
     header { grid-area: head; background: #12203a; color: white; padding: 14px; border-radius: 8px; }
     aside { grid-area: side; background: #dbe5fb; padding: 14px; border-radius: 8px; }
     main { grid-area: main; }
     footer { grid-area: foot; background: #12203a; color: white; padding: 12px; text-align: center; border-radius: 8px; }
     aside li { margin: 8px 0 8px 18px; }
 
+    /* Boxes: as many columns as can fit */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 12px;
     }
 
-    /* Flexbox inside each grid box */
+    /* Flexbox inside each grid box: icon and text side by side */
     .item {
       display: flex;
       align-items: center;
@@ -46,8 +49,10 @@
 </head>
 <body>
   <div class="layout">
+    <!-- Top bar -->
     <header><h2>My Dashboard</h2></header>
 
+    <!-- Side menu -->
     <aside>
       <h3>Menu</h3>
       <ul>
@@ -57,6 +62,7 @@
       </ul>
     </aside>
 
+    <!-- Main area with boxes -->
     <main>
       <div class="gallery">
         <div class="item"><span class="icon">&#128100;</span><div><b>120</b><br>Users</div></div>
@@ -68,6 +74,7 @@
       </div>
     </main>
 
+    <!-- Footer -->
     <footer>Made with CSS Grid</footer>
   </div>
 </body>
