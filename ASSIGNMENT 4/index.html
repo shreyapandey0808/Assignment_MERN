@@ -3,45 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Coding Club</title>
-  <!-- Google Font (internet chahiye) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    /* Variables: change a colour here and it changes everywhere */
+    :root {
+      --brand: #2f5bea;
+      --light: #eef2ff;
+      --dark: #1b2440;
+      --gap: 16px;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Poppins', Georgia, serif;
       font-size: 1rem;
-      background: #eef2ff;
-      color: #1b2440;
+      background: var(--light);
+      color: var(--dark);
       line-height: 1.6;
-      padding: 16px;
+      padding: var(--gap);
     }
 
     h1 { font-size: 2.2rem; letter-spacing: 1px; }
 
     #hero {
-      background: #2f5bea;
+      background: var(--brand);
       color: white;
       text-align: center;
-      padding: 32px 16px;
+      padding: 32px var(--gap);
       border-radius: 10px;
     }
 
     .card {
       background: white;
-      padding: 16px;
-      margin-top: 16px;
+      padding: var(--gap);
+      margin-top: var(--gap);
       border-radius: 10px;
     }
 
     table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-    th { background: #2f5bea; color: white; text-align: left; }
+    th { background: var(--brand); color: white; text-align: left; }
     th, td { padding: 8px; border-bottom: 1px solid #ccd; }
 
     input { padding: 6px; margin: 4px 0; }
     button {
-      background: #2f5bea;
+      background: var(--brand);
       color: white;
       border: 0;
       padding: 10px 18px;
