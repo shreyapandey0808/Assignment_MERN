@@ -8,19 +8,6 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; color: #12203a; }
 
-    /* Navbar: logo left, links + button right */
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 24px;
-      background: #12203a;
-      color: white;
-    }
-    .nav-right { display: flex; align-items: center; gap: 20px; }
-    nav ul { display: flex; gap: 20px; list-style: none; }
-    nav a { color: white; text-decoration: none; }
-
     .btn {
       background: #ffb703;
       border: 0;
@@ -28,19 +15,27 @@
       border-radius: 6px;
       font-weight: bold;
     }
+
+    /* Hero: everything in the centre */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      height: 260px;
+      padding: 16px;
+      text-align: center;
+      background: #2f5bea;
+      color: white;
+    }
   </style>
 </head>
 <body>
-  <nav>
-    <h2>CodeLab</h2>
-    <div class="nav-right">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <button class="btn">Sign up</button>
-    </div>
-  </nav>
+  <section class="hero">
+    <h1>Learn Web Development</h1>
+    <p>Start from zero. Build real projects.</p>
+    <button class="btn">Get started</button>
+  </section>
 </body>
 </html>
