@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <title>Coding Club</title>
   <style>
-    /* CSS is written inside the style tag */
-    body { background: #eef2ff; }
-    h2 { color: #1b2440; }
+    /* * = every element */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { background: #eef2ff; padding: 16px; }
+
+    /* h1 = element selector */
+    h1 { font-size: 2.2rem; }
+
+    /* #hero = id selector (only one on the page) */
+    #hero {
+      background: #2f5bea;
+      color: white;
+      text-align: center;
+      padding: 32px 16px;
+      border-radius: 10px;
+    }
+
+    /* .card = class selector (use many times) */
+    .card {
+      background: white;
+      padding: 16px;
+      margin-top: 16px;
+      border-radius: 10px;
+    }
+
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+    th { background: #2f5bea; color: white; text-align: left; }
+    th, td { padding: 8px; border-bottom: 1px solid #ccd; }
   </style>
 </head>
 <body>
